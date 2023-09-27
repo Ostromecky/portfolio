@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center justify-center w-full">
       <h1>{{ title }}</h1>
       <h2 class="w-full text-center">
-        I'm a
+        {{ prefix }}
         <span
           ref="subtitle"
           class="typewriter title-animated inline-block"
@@ -28,6 +28,7 @@ export default {
       deleting: false,
       counters: null,
       title: '',
+      prefix: '',
       subtitle: '',
       show: false
     }
@@ -49,6 +50,7 @@ export default {
   methods: {
     handleSetTitle(title) {
       this.title = title
+      this.prefix = 'I am a '
     },
     async type(src) {
       if (this.show) {
