@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    @apply font-poppins;
+    font-size: 14px;
+    @apply text-base;
+    line-height: 1.5em;
+  }
+
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: normal;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-style: normal;
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: italic;
+    src: url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+  }
+
+  h1 {
+    @apply sm:text-7xl text-4xl;
+    @apply font-bold;
+    @apply mb-6;
+  }
+
+  h2 {
+    @apply sm:text-4xl text-2xl;
+    @apply font-normal;
+    @apply mb-6;
+  }
+
+  h3 {
+    @apply sm:text-2xl text-xl;
+    @apply font-bold;
+    @apply mb-4;
+  }
+}
