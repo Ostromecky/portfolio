@@ -1,14 +1,14 @@
 <template>
   <div class="flex justify-end px-8 py-6 nav">
     <nav class="flex justify-around">
-      <nuxt-link
+      <NuxtLink
         v-for="item in routes"
         :key="item.route"
         class="p-4"
         :to="item.route"
       >
         {{ item.label }}
-      </nuxt-link>
+      </NuxtLink>
     </nav>
   </div>
 </template>

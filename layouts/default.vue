@@ -130,6 +130,6 @@ a {
 .portrait {
   height: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 430px;
 }
 </style>

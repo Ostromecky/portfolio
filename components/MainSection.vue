@@ -2,7 +2,7 @@
   <section class="relative h-full background-image flex flex-row">
     <div class="flex flex-col items-center justify-center w-full">
       <h1>{{ title }}</h1>
-      <h2 class="w-full text-center">
+      <h3 class="w-full text-center font-normal z-[1]">
         {{ prefix }}
         <span
           ref="subtitle"
@@ -11,7 +11,7 @@
         >
           {{ subtitle }}
         </span>
-      </h2>
+      </h3>
     </div>
     <div class="absolute bottom-0 left-0">
       <SocialMedia />

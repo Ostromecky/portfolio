@@ -14,7 +14,12 @@
     @apply font-poppins;
     font-size: 14px;
     @apply text-base;
-    line-height: 1.5em;
+    // @apply font-normal;
+    line-height: 1.95em;
+  }
+
+  p {
+    text-align: justify;
   }
 
 
@@ -28,8 +33,7 @@
   @font-face {
     font-display: swap;
     font-family: 'Poppins';
-    font-weight: lighter;
-    font-style: normal;
+    font-weight: 100;
     src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
   }
 
@@ -50,18 +54,24 @@
   }
 
   h1 {
-    @apply sm:text-7xl text-4xl;
+    @apply sm:text-8xl text-4xl;
     @apply font-bold;
-    @apply mb-6;
+    @apply mb-10;
   }
 
   h2 {
-    @apply sm:text-4xl text-2xl;
-    @apply font-normal;
-    @apply mb-6;
+    @apply sm:text-5xl text-3xl;
+    @apply font-bold;
+    @apply mb-8;
   }
 
   h3 {
+    @apply sm:text-4xl text-3xl;
+    @apply font-bold;
+    @apply mb-4;
+  }
+
+  h4 {
     @apply sm:text-2xl text-xl;
     @apply font-bold;
     @apply mb-4;
