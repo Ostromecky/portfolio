@@ -16,10 +16,6 @@
             loading="lazy"
             width="430"
             height="573"
-            sizes="(max-width: 710px) 224px,
-            430px"
-            heights="(max-width: 710px) 573px,
-            430px"
             class="portrait max-lg:absolute min-width"
             src="/Kuczek.jpg"
           />

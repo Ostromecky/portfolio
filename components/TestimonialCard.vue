@@ -1,5 +1,5 @@
 <template>
-  <card>
+  <card class="h-full">
     <div class="flex flex-grow justify-between items-center mb-4">
       <div class="flex flex-row items-center">
         <div class="w-16 h-16 relative rounded-full overflow-hidden mr-4">

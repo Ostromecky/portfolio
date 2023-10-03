@@ -5,76 +5,56 @@
         <span class="text-gray mb-4">What my clients think about me</span>
         <h2 class="text-white">Testimonials</h2>
       </div>
-      <Flicking
-        ref="flicking"
-        :hide-before-init="true"
-        :options="{
-          circular: true,
-          align: 'prev'
-        }"
-      >
-        <div class="panel">1</div>
-        <div class="panel">2</div>
-        <div class="panel">3</div>
+      <carousel v-bind="settings" :breakpoints="breakpoints">
+        <slide v-for="testimonial in testimonials" :key="testimonial.fullName">
+          <div class="carousel__item">
+            <TestimonialCard
+              :full-name="testimonial.fullName"
+              :content="testimonial.content"
+              :position="testimonial.position"
+              :icon="testimonial.icon"
+              :img-src="testimonial.imgSrc"
+            />
+          </div>
+        </slide>
 
-        <!-- <div v-for="testimonial in testimonials" class="panels">
-          <TestimonialCard
-            :full-name="testimonial.fullName"
-            :content="testimonial.content"
-            :position="testimonial.position"
-            :icon="testimonial.icon"
-            :img-src="testimonial.imgSrc"
-          />
-        </div> -->
-      </Flicking>
-      <!-- <Flicking
-        v-else
-        ref="flicking"
-        :hide-before-init="true"
-        class="flicking"
-        :options="{
-          circular: true,
-          align: 'prev',
-          autoResize: true,
-          inputType: ['touch', 'mouse']
-        }"
-      >
-        <div
-          v-for="(testimonial, index) in testimonials"
-          v-if="index % 2 === 0"
-          class="panels"
-        >
-          <TestimonialCard
-            :full-name="testimonials[index].fullName"
-            :content="testimonials[index].content"
-            :position="testimonials[index].position"
-            :icon="testimonials[index].icon"
-            :img-src="testimonials[index].imgSrc"
-          />
-          <TestimonialCard
-            v-if="testimonials[index + 1]"
-            :full-name="testimonials[index + 1].fullName"
-            :content="testimonials[index + 1].content"
-            :position="testimonials[index + 1].position"
-            :icon="testimonials[index + 1].icon"
-            :img-src="testimonials[index + 1].imgSrc"
-          />
-        </div>
-      </Flicking> -->
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
     </div>
   </section>
 </template>
 
 <script>
-import Flicking from '@egjs/vue3-flicking'
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import { debounce } from '~/utils/debounce'
-import TestimonialCard from '~/components/TestimonialCard'
+// import TestimonialCard from '~/components/TestimonialCard'
 
 export default {
-  components: { TestimonialCard, Flicking },
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation
+  },
   data() {
     return {
       isMobile: true,
+      settings: {
+        itemsToShow: 1,
+        snapAlign: 'center',
+        wrapAround: true
+      },
+      // Breakpoints are mobile first and apply upwards
+      breakpoints: {
+        768: {
+          itemsToShow: 2,
+          snapAlign: 'start'
+        }
+      },
       testimonials: [
         {
           fullName: 'Maria Wilson1',
@@ -147,21 +127,39 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.flicking {
-  width: 100%;
-  margin: 0px auto;
-  @apply py-4;
-}
+<style lang="scss">
+.carousel {
+  &__item {
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+  }
 
-.panels {
-  //position: absolute;
-  //top: 0;
-  margin-right: 30px;
-  width: 100%;
-  @apply grid;
-  @apply gap-8;
-  @apply grid-cols-2;
+  &__slide {
+    padding: 10px;
+    align-items: start;
+  }
+
+  &__prev,
+  &__next {
+    display: none;
+  }
+
+  &__pagination {
+    &-button {
+      &::after {
+        @apply bg-gray;
+        @apply rounded-full;
+      }
+
+      &--active {
+        &::after {
+          @apply rounded-full;
+          @apply bg-white;
+        }
+      }
+    }
+  }
 }
 
 @screen md {
