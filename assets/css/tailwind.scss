@@ -24,18 +24,21 @@
 
 
   @font-face {
+    font-display: block;
     font-family: 'Poppins';
     font-weight: normal;
     src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
   }
 
   @font-face {
+    font-display: block;
     font-family: 'Poppins';
     font-weight: 100;
     src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
   }
 
   @font-face {
+    font-display: block;
     font-family: 'Poppins';
     font-weight: 700;
     font-style: normal;
@@ -43,6 +46,7 @@
   }
 
   @font-face {
+    font-display: block;
     font-family: 'Poppins';
     font-weight: normal;
     font-style: italic;
