@@ -102,6 +102,7 @@ export default {
 .typewriter {
   z-index: 1;
   vertical-align: top;
+  line-height: 1.2em;
 
   &-visible {
     width: 100%;
