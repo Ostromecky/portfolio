@@ -1,28 +1,33 @@
 <template>
-  <section class="flex flex-col mx-8 my-16">
+  <section class="flex flex-col px-4 my-8">
     <div class="flex flex-col justify-center mb-16">
       <div class="flex flex-col items-start w-100">
         <span class="text-gray mb-4">What my clients think about me</span>
         <h2 class="text-white">Testimonials</h2>
       </div>
-      <carousel v-bind="settings" :breakpoints="breakpoints">
-        <slide v-for="testimonial in testimonials" :key="testimonial.fullName">
-          <div class="carousel__item">
-            <TestimonialCard
-              :full-name="testimonial.fullName"
-              :content="testimonial.content"
-              :position="testimonial.position"
-              :icon="testimonial.icon"
-              :img-src="testimonial.imgSrc"
-            />
-          </div>
-        </slide>
+      <div class="mx-[-1em]">
+        <carousel v-bind="settings" :breakpoints="breakpoints">
+          <slide
+            v-for="testimonial in testimonials"
+            :key="testimonial.fullName"
+          >
+            <div class="carousel__item">
+              <TestimonialCard
+                :full-name="testimonial.fullName"
+                :content="testimonial.content"
+                :position="testimonial.position"
+                :icon="testimonial.icon"
+                :img-src="testimonial.imgSrc"
+              />
+            </div>
+          </slide>
 
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template>
-      </carousel>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </div>
     </div>
   </section>
 </template>
@@ -136,7 +141,7 @@ export default {
   }
 
   &__slide {
-    padding: 10px;
+    padding: 1em;
     align-items: start;
   }
 
@@ -152,6 +157,11 @@ export default {
         @apply rounded-full;
       }
 
+      &:hover {
+        &::after {
+          @apply bg-primary;
+        }
+      }
       &--active {
         &::after {
           @apply rounded-full;
