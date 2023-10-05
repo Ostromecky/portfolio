@@ -1,10 +1,6 @@
 <template>
   <section class="flex flex-col my-16">
-    <div class="flex flex-col items-center justify-center mb-16">
-      <span class="text-gray mb-4">Get to know me</span>
-      <h2 class="text-white">About me</h2>
-      <AnimationBar />
-    </div>
+    <PageHeader :title="'About me'" :subtitle="'Get to know me'" />
     <div class="flex flex-row max-lg:flex-col items-center">
       <div
         class="lg:flex-[0_0_42%] lg:max-w-[42%] flex flex-col justify-center items-start max-lg:items-center max-lg:w-full px-4"

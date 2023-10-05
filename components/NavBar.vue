@@ -28,8 +28,8 @@ export default {
           label: 'Blog'
         },
         {
-          route: '/portfolio',
-          label: 'Portfolio'
+          route: '/resume',
+          label: 'Resume'
         },
         {
           route: '/about',
