@@ -19,7 +19,7 @@ withDefaults(defineProps<{ name: string; value: number }>(), {
 
 <style lang="scss" scoped>
 .progress {
-  @apply bg-borderGray h-2 rounded-sm;
+  @apply bg-borderGray h-3 rounded-sm;
   &-bar {
     @apply bg-primary h-full rounded-sm;
   }
