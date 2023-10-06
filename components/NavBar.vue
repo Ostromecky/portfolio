@@ -24,15 +24,11 @@ export default {
           label: 'About'
         },
         {
-          route: '/about',
-          label: 'Blog'
-        },
-        {
           route: '/resume',
           label: 'Resume'
         },
         {
-          route: '/about',
+          route: '/contact',
           label: 'Contact'
         }
       ]
