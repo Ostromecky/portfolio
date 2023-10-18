@@ -8,8 +8,8 @@
     </section>
     <section class="flex flex-col lg:flex-row mb-16 gap-8 px-4">
       <div class="lg:flex-[60%]">
-        <h4>Message Me</h4>
-        <form>
+        <h3>Message Me</h3>
+        <form class="mb-6">
           <div class="flex flex-col sm:flex-row sm:gap-4">
             <FormField
               v-model="form.name"
@@ -42,12 +42,20 @@
         </form>
       </div>
       <div class="lg:flex-[40%]">
-        <h4>Contact Info</h4>
-        <p class="text-gray">
-          Always available for freelance work if the right project comes along,
-          Feel free to contact me!
+        <h3>Contact Info</h3>
+        <p class="text-gray mb-6">
+          Always available for freelance work if the right project <br />
+          comes along, Feel free to contact me!
         </p>
-        <!-- <div></div> -->
+        <div>
+          <ContactItem
+            v-for="item in items"
+            :key="item.title"
+            :title="item.title"
+            :subtitle="item.subtitle"
+            :icon="item.icon"
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -61,7 +69,25 @@ const form = reactive({
   message: ''
 })
 
+const items = [
+  {
+    title: 'Name',
+    subtitle: 'Paweł Ostromecki',
+    icon: ['fas', 'user']
+  },
+  {
+    title: 'Location',
+    subtitle: 'Wroclaw, Poland',
+    icon: ['fas', 'location-dot']
+  },
+  {
+    title: 'Call me',
+    subtitle: '+48 661 546 446',
+    icon: ['fas', 'phone']
+  }
+]
+
 const send = () => {}
 </script>
 
-<style scoped lang="scss"></style>
+<style lang="scss"></style>
