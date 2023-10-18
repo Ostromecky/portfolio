@@ -10,7 +10,9 @@
           <span class="w-100 block text-sm text-gray">{{ position }}</span>
         </div>
       </div>
-      <font-awesome-icon class="text-6xl text-primaryShadowed" :icon="icon" />
+      <ClientOnly>
+        <font-awesome-icon class="text-6xl text-primaryShadowed" :icon="icon" />
+      </ClientOnly>
     </div>
     <p class="text-gray">
       {{ content }}

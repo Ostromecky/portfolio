@@ -35,7 +35,6 @@ export default {
   },
 
   mounted() {
-    console.log('env', process.env.NODE_ENV)
     this.handleSetTitle('Paweł Ostromecki')
     const subtitleSrc = ['Developer', 'Designer', 'Freelancer']
     this.counters = setInterval(() => this.type(subtitleSrc), 2000)

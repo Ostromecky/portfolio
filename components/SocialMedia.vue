@@ -5,15 +5,17 @@
       'flex p-4 items-center'
     ]"
   >
-    <a
-      v-for="media in medias"
-      :key="media.href"
-      class="hover:text-primary flex items-center"
-      :href="media.href"
-      target="_blank"
-    >
-      <font-awesome-icon class="text-2xl" :icon="media.iconArgs" />
-    </a>
+    <ClientOnly>
+      <a
+        v-for="media in medias"
+        :key="media.href"
+        class="hover:text-primary flex items-center"
+        :href="media.href"
+        target="_blank"
+      >
+        <font-awesome-icon class="text-2xl" :icon="media.iconArgs" />
+      </a>
+    </ClientOnly>
   </div>
 </template>
 

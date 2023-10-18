@@ -1,10 +1,12 @@
 <template>
   <card :underlined="true">
-    <font-awesome-icon
-      v-if="icon"
-      class="text-6xl text-primaryShadowed mb-4"
-      :icon="icon"
-    />
+    <ClientOnly>
+      <font-awesome-icon
+        v-if="icon"
+        class="text-6xl text-primaryShadowed mb-4"
+        :icon="icon"
+      />
+    </ClientOnly>
     <h4>{{ title }}</h4>
     <p class="text-gray">{{ content }}</p>
   </card>

@@ -61,9 +61,7 @@ const form = reactive({
   message: ''
 })
 
-const send = () => {
-  console.log(form.email)
-}
+const send = () => {}
 </script>
 
 <style scoped lang="scss"></style>

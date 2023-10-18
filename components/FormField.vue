@@ -28,6 +28,7 @@ withDefaults(
     name: ''
   }
 )
+defineEmits(['update:modelValue'])
 </script>
 
 <style lang="scss" scoped>

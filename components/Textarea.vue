@@ -21,6 +21,7 @@ withDefaults(
     rows: 3
   }
 )
+defineEmits(['update:modelValue'])
 </script>
 
 <style lang="scss" scoped>
