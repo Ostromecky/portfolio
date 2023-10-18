@@ -5,7 +5,7 @@
         <div class="w-16 h-16 relative rounded-full overflow-hidden mr-4">
           <img class="absolute" :src="imgSrc" alt="" />
         </div>
-        <div>
+        <div class="text-start">
           <span class="w-100 block">{{ fullName }}</span>
           <span class="w-100 block text-sm text-gray">{{ position }}</span>
         </div>

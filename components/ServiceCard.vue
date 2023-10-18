@@ -2,10 +2,10 @@
   <card :underlined="true">
     <font-awesome-icon
       v-if="icon"
-      class="text-6xl text-primaryShadowed mb-8"
+      class="text-6xl text-primaryShadowed mb-4"
       :icon="icon"
     />
-    <h5>{{ title }}</h5>
+    <h4>{{ title }}</h4>
     <p class="text-gray">{{ content }}</p>
   </card>
 </template>

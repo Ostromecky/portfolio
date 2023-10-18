@@ -25,7 +25,7 @@
         class="lg:flex-[0_0_58%] lg:max-w-[58%] flex flex-col max-lg:w-full max-w-2xl max-lg:max-w-none justify-start px-4"
       >
         <h4 class="text-primary">Who am I?</h4>
-        <h3 class="text-white">I'm Paweł Ostromecki, Fullstack Developer</h3>
+        <h3 class="text-white">I'm Paweł Ostromecki, Software Engineer</h3>
         <p class="text-gray pb-6 border-b-2 border-borderGray">
           {{ description }}
         </p>
@@ -71,19 +71,18 @@
 </template>
 
 <script>
-import AnimationBar from '@/components/AnimationBar'
 import SocialMedia from '@/components/SocialMedia'
 
 export default {
   name: 'AboutInfo',
-  components: { AnimationBar, SocialMedia },
+  components: { SocialMedia },
   data: () => {
     return {
       description:
-        'I am a freelancer based in the United Kingdom and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.',
+        "I'm a passionate software engineer based in Poland, specialized in crafting interactive, efficient, and innovative experiences for various business sectors. With an extensive background in both Angular and Vue.js, my skill set has been a trusted cornerstone in numerous projects across industries such as automotive, e-commerce, military, and manufacturing.",
       email: 'pawel.ostromecky@gmail.com',
       fullname: 'Paweł Ostromecki',
-      age: '23',
+      age: '25',
       city: 'Wrocław, PL'
     }
   },

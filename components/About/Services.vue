@@ -27,34 +27,37 @@ export default {
     return {
       services: [
         {
-          title: 'Design Trends1',
-          icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          title: 'Web Apps',
+          icon: ['fab', 'angular'],
+          content: 'SSR or SPA, I can build it for you.'
         },
         {
-          title: 'Design Trends2',
-          icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          title: 'Web Sites',
+          icon: ['fab', 'vuejs'],
+          content:
+            'User experience oriented websites, landing pages and e-commerce'
         },
         {
-          title: 'Design Trends3',
+          title: 'CI/CD',
           icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          content: 'I deliver high quality code with automated tests'
         },
         {
-          title: 'Design Trends4',
-          icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          title: 'Audit',
+          icon: ['fa', 'rocket'],
+          content:
+            'I can audit your code and suggest improvements, refactor. It saves time and money.'
         },
         {
-          title: 'Design Trends5',
-          icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          title: 'Responsive Web Design',
+          icon: ['fas', 'palette'],
+          content: 'Mobile first approach, responsive design'
         },
         {
-          title: 'Design Trends6',
-          icon: ['fab', 'github'],
-          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          title: 'Mobile Apps',
+          icon: ['fab', 'android'],
+          content:
+            'Polished and professional looking mobile hybrid apps both for Android and iOS'
         }
       ]
     }

@@ -62,29 +62,28 @@ export default {
       },
       testimonials: [
         {
-          fullName: 'Maria Wilson1',
+          fullName: 'Maria Wilson',
           content:
-            'Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.' +
-            'Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.',
+            "Paweł's expertise shines beyond rapid, quality code delivery. His proactive approach in offering insights and embracing feedback makes him stand out. Throughout our collaboration, he was an integral team player, adapting swiftly and effectively. Highly recommended for any frontend development needs.",
           position: 'Envato Customer',
-          icon: ['fab', 'github'],
-          imgSrc: 'http://exill.dk/demo/kitzu/template/img/client-3.jpg'
+          icon: ['fas', 'quote-right'],
+          imgSrc: '/dawid.jpeg'
         },
         {
-          fullName: 'Maria Wilson2',
+          fullName: 'Jon Doe',
           content:
-            'Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.',
+            'Paweł proved to be exceptionally creative and responsive in our collaboration. He didn’t just address our needs promptly; he also enriched the work with valuable insights from his vast coding experience. Open to feedback and iterative refinement, Paweł partnered with us through every step of the project, ensuring all changes and adaptations were handled with expertise. His commitment to not just delivering tasks but also contributing ideas set him apart. I highly recommend his services for anyone looking for a skilled and proactive frontend developer.',
           position: 'Envato Customer',
-          icon: ['fab', 'github'],
-          imgSrc: 'http://exill.dk/demo/kitzu/template/img/client-3.jpg'
+          icon: ['fas', 'quote-right'],
+          imgSrc: '/dawid.jpeg'
         },
         {
-          fullName: 'Maria Wilson3',
+          fullName: 'Dawid Puda',
           content:
-            'Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.',
-          position: 'Envato Customer',
-          icon: ['fab', 'github'],
-          imgSrc: 'http://exill.dk/demo/kitzu/template/img/client-3.jpg'
+            'Paweł did an excellent creative job, addressing our requests quickly, and also providing his own code insight, being open to feedback and changes or edits when they arose. He worked with us the entire way. Highly recommended.',
+          position: 'CEO at Ex-App',
+          icon: ['fas', 'quote-right'],
+          imgSrc: '/dawid.jpeg'
         }
       ]
     }
