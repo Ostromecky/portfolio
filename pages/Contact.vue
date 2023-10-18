@@ -11,12 +11,18 @@
         <h4>Message Me</h4>
         <form>
           <div class="flex flex-col sm:flex-row sm:gap-4">
-            <FormField v-model="form.name" class="grow" placeholder="Name" />
+            <FormField
+              v-model="form.name"
+              class="grow"
+              placeholder="Name"
+              name="name"
+            />
             <FormField
               v-model="form.email"
               class="grow"
               placeholder="Email"
               type="email"
+              name="email"
             />
           </div>
           <FormField v-model="form.subject" placeholder="Subject" type="text" />

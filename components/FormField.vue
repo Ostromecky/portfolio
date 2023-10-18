@@ -5,6 +5,7 @@
       :type="type"
       :placeholder="placeholder"
       :value="modelValue"
+      v-bind="name && { name }"
       @input="
         $emit('update:modelValue', ($event.target! as HTMLInputElement).value)
       "
@@ -14,11 +15,17 @@
 
 <script setup lang="ts">
 withDefaults(
-  defineProps<{ modelValue: string; placeholder: string; type?: string }>(),
+  defineProps<{
+    modelValue: string
+    placeholder: string
+    type?: string
+    name?: string
+  }>(),
   {
     modelValue: '',
     placeholder: '',
-    type: 'text'
+    type: 'text',
+    name: ''
   }
 )
 </script>
