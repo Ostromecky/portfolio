@@ -8,13 +8,17 @@
         <div
           class="max-lg:relative max-lg:w-64 max-lg:h-64 max-lg:rounded-full max-lg:overflow-hidden max-lg:mb-16"
         >
-          <img
-            loading="lazy"
-            width="430"
-            height="573"
-            class="portrait max-lg:absolute min-width"
-            src="/Kuczek.jpg"
-          />
+          <picture>
+            <source media="(max-width: 1023px)" srcset="about_mobile.webp" />
+            <source media="(min-width: 1024px)" srcset="about.webp" />
+            <img
+              loading="lazy"
+              width="430"
+              height="573"
+              class="portrait max-lg:absolute min-width"
+              src="/about.webp"
+            />
+          </picture>
         </div>
       </div>
       <div
