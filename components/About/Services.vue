@@ -32,7 +32,7 @@ export default {
           content: 'SSR or SPA, I can build it for you.'
         },
         {
-          title: 'Web Sites',
+          title: 'Websites',
           icon: ['fab', 'vuejs'],
           content:
             'User experience oriented websites, landing pages and e-commerce'
