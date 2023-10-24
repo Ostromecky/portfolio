@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col mx-auto" style="max-width: 1200px">
-    <section class="flex flex-col my-16">
+    <section class="flex flex-col mt-16 mb-8">
       <PageHeader
         :title="'Get in touch'"
         :subtitle="'Feel free to contact me anytime'"
@@ -24,6 +24,12 @@
               type="email"
               name="email"
             />
+            <input
+              type="radio"
+              class="honey"
+              :checked="form.honey"
+              @change="form.honey = true"
+            />
           </div>
           <FormField v-model="form.subject" placeholder="Subject" type="text" />
           <Textarea
@@ -44,8 +50,8 @@
       <div class="lg:flex-[40%]">
         <h3>Contact Info</h3>
         <p class="text-gray mb-6">
-          Always available for freelance work if the right project <br />
-          comes along, Feel free to contact me!
+          Always available for freelance work if the right project comes along,
+          Feel free to contact me!
         </p>
         <div>
           <ContactItem
@@ -62,11 +68,13 @@
 </template>
 
 <script setup lang="ts">
-const form = reactive({
+import type { ISend } from '~/utils/send'
+const form = reactive<ISend & { honey: boolean }>({
   name: '',
   email: '',
   subject: '',
-  message: ''
+  message: '',
+  honey: false
 })
 
 const items = [
@@ -87,7 +95,37 @@ const items = [
   }
 ]
 
-const send = () => {}
+const send = async () => {
+  if (form.honey) return
+  const { data } = await $fetch<{
+    data: {
+      id?: string
+      message?: string
+      statusCode?: number
+      name: string
+    }
+  }>('api/send', {
+    method: 'post',
+    body: {
+      ...(form as ISend)
+    }
+  }).catch((error) => {
+    console.error('error: ', error)
+    return error
+  })
+
+  if (data.id) {
+    // console.log('response: ', data)
+  }
+
+  if (data.statusCode) {
+    console.error('error: ', data)
+  }
+}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.honey {
+  @apply hidden;
+}
+</style>

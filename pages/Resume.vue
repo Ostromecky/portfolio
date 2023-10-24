@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col mx-auto" style="max-width: 1200px">
-    <section class="flex flex-col my-16">
+    <section class="flex flex-col mt-16 mb-8">
       <PageHeader
         :title="'Resume'"
         :subtitle="'Checkout my Resume'"
@@ -63,22 +63,25 @@ const educationList = ref([
 
 const experienceList = ref([
   {
-    title: 'Junior Software Developer',
-    subtitle: 'Exence S. A. (05.2018 - 12.2020)',
-    content:
-      'Software Development and maintenance (Angular 2+, Java Spring, SQL, Node, Nest.js, Electron, Vue) of enterprise apps dedicated for military, energy, manufacturing industries'
+    title: 'Senior Front-End Developer (Freelancer)',
+    subtitle: 'IT Bees (06.2023 - 08.2023)',
+    content: `
+    Developed functionalities for brand new mobile app Park
+Control 24
+Integrated native functionalities on Android, iOS
+(camera, notifications, network etc.)
+Stack: Ionic 7, Capacitor 5, Angular 16`
   },
   {
     title: 'Front-End Developer',
-    subtitle: 'Angry Nerds (01.2020 - 06.2020)',
+    subtitle: 'GOD Nearshore (07.2021 - 10.2023)',
     content: `
-      Maintained app of Spanish airlines operator Volotea
-booking system, backoffice SPA, landing page
-ERP-class system development for commercial drinkg
-industry
-Stack: Angular 10+, Umbraco CMS
-
-      `
+    Developed and maintained enterprise ERP-class app for
+automotive industry
+Developed and maintained system consisted of 2 mobile
+apps created with Ionic. Old maintained in Ionic 3 +
+Cordova, new created from scratch with NX, Ionic 6,
+Capacitor 5`
   },
   {
     title: 'Full-Stack Developer',
@@ -94,24 +97,21 @@ Stack: Angular 12, SS
   },
   {
     title: 'Front-End Developer',
-    subtitle: 'GOD Nearshore (07.2021 - 10.2023)',
+    subtitle: 'Angry Nerds (01.2020 - 06.2020)',
     content: `
-    Developed and maintained enterprise ERP-class app for
-automotive industry
-Developed and maintained system consisted of 2 mobile
-apps created with Ionic. Old maintained in Ionic 3 +
-Cordova, new created from scratch with NX, Ionic 6,
-Capacitor 5`
+      Maintained app of Spanish airlines operator Volotea
+booking system, backoffice SPA, landing page
+ERP-class system development for commercial drinkg
+industry
+Stack: Angular 10+, Umbraco CMS
+
+      `
   },
   {
-    title: 'Senior Front-End Developer (Freelancer)',
-    subtitle: 'IT Bees (06.2023 - 08.2023)',
-    content: `
-    Developed functionalities for brand new mobile app Park
-Control 24
-Integrated native functionalities on Android, iOS
-(camera, notifications, network etc.)
-Stack: Ionic 7, Capacitor 5, Angular 16`
+    title: 'Junior Software Developer',
+    subtitle: 'Exence S. A. (05.2018 - 12.2020)',
+    content:
+      'Software Development and maintenance (Angular 2+, Java Spring, SQL, Node, Nest.js, Electron, Vue) of enterprise apps dedicated for military, energy, manufacturing industries'
   }
 ])
 </script>

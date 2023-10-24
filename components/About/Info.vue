@@ -30,7 +30,7 @@
           {{ description }}
         </p>
         <div class="flex flex-col py-6">
-          <div class="flex flex-row flex-wrap mb-4">
+          <div class="flex flex-row flex-wrap sm:mb-4">
             <div class="w-2/5 max-sm:w-full">
               <span class="mr-4 text-textColor">Name:</span>
               <span class="text-gray">{{ fullname }}</span>

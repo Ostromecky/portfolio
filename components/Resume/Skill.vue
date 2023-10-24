@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-12">
+  <div class="mb-6 sm:mb-12">
     <div class="flex justify-between mb-2">
       <span class="text-gray">{{ name }}</span>
       <span class="text-gray">{{ value }}%</span>

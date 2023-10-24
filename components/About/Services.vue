@@ -29,7 +29,7 @@ export default {
         {
           title: 'Web Apps',
           icon: ['fab', 'angular'],
-          content: 'SSR or SPA, I can build it for you.'
+          content: 'SSR or SPA, I can build it for you. (Angular, Vue.js)'
         },
         {
           title: 'Websites',
@@ -38,9 +38,9 @@ export default {
             'User experience oriented websites, landing pages and e-commerce'
         },
         {
-          title: 'CI/CD',
-          icon: ['fab', 'github'],
-          content: 'I deliver high quality code with automated tests'
+          title: 'Backend',
+          icon: ['fab', 'node'],
+          content: 'I deliver high quality backend solutions (NestJS, Supabase)'
         },
         {
           title: 'Audit',
@@ -56,8 +56,8 @@ export default {
         {
           title: 'Mobile Apps',
           icon: ['fab', 'android'],
-          content:
-            'Polished and professional looking mobile hybrid apps both for Android and iOS'
+          content: `Polished and professional looking mobile hybrid apps both for Android and iOS
+            (Ionic, Capacitor)`
         }
       ]
     }
