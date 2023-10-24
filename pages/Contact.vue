@@ -114,10 +114,6 @@ const send = async () => {
     return error
   })
 
-  if (data.id) {
-    // console.log('response: ', data)
-  }
-
   if (data.statusCode) {
     console.error('error: ', data)
   }
