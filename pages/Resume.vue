@@ -34,7 +34,7 @@
         :subtitle="'My level of knowledge in some tools'"
         :animated="false"
       ></PageHeader>
-      <div class="flex flex-col sm:flex-row sm:gap-4">
+      <div class="flex flex-col sm:flex-row sm:gap-6">
         <div class="grow flex flex-col">
           <ResumeSkill name="HTML/CSS" :value="90"></ResumeSkill>
           <ResumeSkill name="Web Design" :value="60"></ResumeSkill>
@@ -47,6 +47,28 @@
           <ResumeSkill name="Typescript" :value="90"></ResumeSkill>
           <ResumeSkill name="Mobile" :value="40"></ResumeSkill>
         </div>
+      </div>
+    </section>
+    <section class="flex flex-col md:flex-row px-4 mb-16 sm:gap-6">
+      <div class="px-4 md:basis-1/2 mb-8">
+        <h2>Get to know me</h2>
+        <p class="text-gray">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum
+          quasi assumenda culpa praesentium consectetur voluptatibus expedita.
+          Voluptatem tempore, aspernatur rem facilis, distinctio nemo! Odio
+          velit, nemo dolorem voluptas!
+        </p>
+      </div>
+      <div class="video-container px-4 md:basis-1/2">
+        <iframe
+          class="video-iframe"
+          src="https://www.youtube.com/embed/DPeF4v2CNmU?si=YjfNL4Kn--ODNEVW"
+          title="YouTube video player"
+          frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
   </div>
@@ -119,5 +141,26 @@ Stack: Angular 10+, Umbraco CMS
 <style lang="scss" scoped>
 .subheader {
   @apply justify-start items-start mb-8;
+}
+
+.video {
+  &-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    // padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+    @apply md:pt-[28.125%] pt-[56.25%];
+  }
+
+  &-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
