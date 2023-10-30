@@ -1,7 +1,7 @@
 <template>
   <button
     :type="type"
-    class="bg-primary p-4 active:bg-primaryShadowed"
+    class="bg-primary py-3 px-4 active:bg-primaryShadowed"
     :class="rounded ? 'rounded-full' : 'rounded-lg'"
   >
     <font-awesome-icon v-if="icon" class="text-2xl" :icon="icon" />

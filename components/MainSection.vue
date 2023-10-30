@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-full background-image flex flex-row">
+  <section class="relative h-full background-image flex flex-row mt-[-60px]">
     <div class="flex flex-col items-center justify-center w-full">
       <h1>{{ title }}</h1>
       <h3 class="w-full text-center font-normal z-[1]">

@@ -61,9 +61,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row flex-wrap items-center">
+        <div class="flex flex-row flex-wrap items-center gap-4 sm:gap-8">
           <a href="/cv.pdf" target="_blank">
-            <Button :rounded="true" class="px-8 mr-8" label="Download CV" />
+            <Button :rounded="true" class="px-8" label="Download CV" />
           </a>
           <div class="social-media-container flex items-center">
             <SocialMedia :horizontal="true" />
