@@ -65,22 +65,22 @@ body {
 
 .view-wrapper {
   min-height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
 
   & > *:not(.nav) {
     min-height: 100vh;
-    height: -webkit-fill-available;
+    height: 100%;
   }
 }
 
 #__layout {
   min-height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 #__nuxt {
   min-height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 *,
