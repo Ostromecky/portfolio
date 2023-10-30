@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col mx-auto" style="max-width: 1200px">
-    <section class="flex flex-col mt-16 mb-8">
+    <section class="flex flex-col my-8">
       <PageHeader
         :title="'Resume'"
         :subtitle="'Checkout my Resume'"
       ></PageHeader>
     </section>
-    <section class="flex flex-col sm:flex-row mb-16">
-      <div class="px-4 mb-16 sm:m-0 sm:basis-1/2">
+    <section class="flex flex-col sm:flex-row my-8">
+      <div class="px-4 sm:m-0 sm:basis-1/2">
         <ResumeList :title="'Education'" :items="educationList">
           <template #default="{ item }">
             <h3>{{ item.title }}</h3>
@@ -27,7 +27,7 @@
       </div>
       <!-- <ResumeList :title="'Experience'" :items="experienceList"></ResumeList> -->
     </section>
-    <section class="flex flex-col my-16 px-4">
+    <section class="flex flex-col my-8 px-4">
       <PageHeader
         class="subheader"
         :title="'My skills'"
@@ -49,7 +49,7 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col md:flex-row px-4 mb-16 sm:gap-6">
+    <section class="flex flex-col md:flex-row px-4 my-8 sm:gap-6">
       <div class="px-4 md:basis-1/2 mb-8">
         <h2>Get to know me</h2>
         <p class="text-gray">

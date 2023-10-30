@@ -1,6 +1,10 @@
 <template>
-  <section class="flex flex-col my-16">
-    <PageHeader :title="'About me'" :subtitle="'Get to know me'" />
+  <section class="flex flex-col my-8">
+    <PageHeader
+      class="mb-16"
+      :title="'About me'"
+      :subtitle="'Get to know me'"
+    />
     <div class="flex flex-row max-lg:flex-col items-center">
       <div
         class="lg:flex-[0_0_42%] lg:max-w-[42%] flex flex-col justify-center items-start max-lg:items-center max-lg:w-full px-4"

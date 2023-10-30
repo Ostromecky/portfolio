@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col mx-auto" style="max-width: 1200px">
-    <section class="flex flex-col mt-16 mb-8">
+    <section class="flex flex-col my-8">
       <PageHeader
         :title="'Get in touch'"
         :subtitle="'Feel free to contact me anytime'"
       ></PageHeader>
     </section>
-    <section class="flex flex-col lg:flex-row mb-16 gap-8 px-4">
+    <section class="flex flex-col lg:flex-row my-8 gap-8 px-4">
       <div class="lg:flex-[60%]">
         <h3>Message Me</h3>
         <form class="mb-6">

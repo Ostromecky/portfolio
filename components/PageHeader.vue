@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center mb-16">
+  <div class="flex flex-col items-center justify-center">
     <span class="text-gray mb-4">{{ subtitle }}</span>
     <h2 class="text-white">{{ title }}</h2>
     <AnimationBar v-if="animated" />

@@ -1,6 +1,6 @@
 <template>
-  <section class="flex flex-col px-4 my-16">
-    <div class="flex flex-col justify-center mb-16">
+  <section class="flex flex-col px-4 my-8">
+    <div class="flex flex-col justify-center">
       <div class="flex flex-col items-start w-100">
         <span class="text-gray mb-4">Services I offer to my clients</span>
         <h2 class="text-white">My Services</h2>
