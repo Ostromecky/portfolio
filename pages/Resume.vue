@@ -6,7 +6,7 @@
         :subtitle="'Checkout my Resume'"
       ></PageHeader>
     </section>
-    <section class="flex flex-col sm:flex-row my-8">
+    <section class="flex flex-col max-sm:gap-8 sm:flex-row my-8">
       <div class="px-4 sm:m-0 sm:basis-1/2">
         <ResumeList :title="'Education'" :items="educationList">
           <template #default="{ item }">
