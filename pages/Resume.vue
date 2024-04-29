@@ -82,6 +82,16 @@ const educationList = ref([
 
 const experienceList = ref([
   {
+    title: 'Senior Front-End Developer',
+    subtitle: 'Stibo Systems (11.2023 - 05.2024)',
+    content: `
+    Developed functionalities for products Stibo Systems PDX and Enhanced Content
+    leading in Master Data Management industry. Analyzed architecture outline,
+    maintained monorepo-based system.
+    
+Stack: Angular 16, NX`
+  },
+  {
     title: 'Senior Front-End Developer (Freelancer)',
     subtitle: 'IT Bees (06.2023 - 08.2023)',
     content: `
@@ -97,9 +107,9 @@ Stack: Ionic 7, Capacitor 5, Angular 16`
     content: `
     Developed and maintained enterprise ERP-class app for
 automotive industry
-Developed and maintained system consisted of 2 mobile
+Developed and maintained system consisting of 2 mobile
 apps created with Ionic. Old maintained in Ionic 3 +
-Cordova, new created from scratch with NX, Ionic 6,
+Cordova, newly created from scratch with NX, Ionic 6,
 Capacitor 5`
   },
   {
@@ -108,7 +118,7 @@ Capacitor 5`
     content: `
     Developed and maintained web app for leading polish
 delivery broker
-Developed backoffice SPA
+Developed Admin SPA
 Developed map web widget using Vue.js and vanilla JS
 Stack: Angular 12, SS
 
@@ -120,7 +130,7 @@ Stack: Angular 12, SS
     content: `
       Maintained app of Spanish airlines operator Volotea
 booking system, backoffice SPA, landing page
-ERP-class system development for commercial drinkg
+ERP-class system development for commercial alcohol
 industry
 Stack: Angular 10+, Umbraco CMS
 
