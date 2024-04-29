@@ -53,10 +53,7 @@
       <div class="px-4 md:basis-1/2 mb-8">
         <h2>Get to know me</h2>
         <p class="text-gray">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum
-          quasi assumenda culpa praesentium consectetur voluptatibus expedita.
-          Voluptatem tempore, aspernatur rem facilis, distinctio nemo! Odio
-          velit, nemo dolorem voluptas!
+          👋 Hi there! I'm Paweł, a senior software engineer with 6 years of diverse experience spanning industries like Automotive, Master Data Management, E-commerce, and Military. Proficient in Angular, Ionic, Vue, I specialize in architecting robust solutions and fostering collaborative environments. Whether leading teams through complex projects or diving into code, I'm driven by a passion for innovation and excellence. Outside work, you'll find me cycling, running, and drinking coffee, fueling my creativity and drive for continuous learning. Let's connect and discuss how I can contribute to your next project!
         </p>
       </div>
       <div class="video-container px-4 md:basis-1/2">
